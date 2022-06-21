@@ -1,0 +1,10 @@
+<h2>Carros</h2>
+<ul class="carros">
+  <li *ngFor="let carro of carros">
+    <button type="button" (click)="onSelect(carro)">
+      <span class="badge">{{carro.nam}} </span>
+      <span class="name">{{carro.cod}}</span>
+    </button>
+  </li>
+</ul>
+<app-carro-detail [carro]="selectedCarro"></app-carro-detail>

@@ -1,0 +1,25 @@
+<div *ngIf="carro">
+    <div>
+      <h2 class="colorWhite">Detalhes do Carro: {{carro.nam}}</h2>
+      <div>
+        <label for="carro-nam">Nome </label>
+        <input id="carro-nam" [(ngModel)]="carro.nam" placeholder="Nome">
+      </div>
+      <div>
+        <label for="carro-cod">Código </label>
+        <input id="carro-cod" [(ngModel)]="carro.cod" placeholder="Código">
+      </div>
+      <div>
+        <label for="carro-mod">Modelo </label>
+        <input id="carro-mod" [(ngModel)]="carro.mod" placeholder="Modelo">
+      </div>
+      <div>
+        <label for="carro-pre">Preço </label>
+        <input id="carro-pre" [(ngModel)]="carro.pre" placeholder="Preço">
+      </div>
+      <div>
+        <label for="carro-ano">Ano </label>
+        <input id="carro-ano" [(ngModel)]="carro.ano" placeholder="Ano">
+      </div>
+    </div>
+</div>
